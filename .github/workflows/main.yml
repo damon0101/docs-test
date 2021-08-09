@@ -53,7 +53,7 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           # 部署目录为 VuePress 的默认输出目录
-          FOLDER: docs/.vuepress/dist
+          FOLDER: docs/.vuepress/dist/
 
 
 # name: Build and Deploy
