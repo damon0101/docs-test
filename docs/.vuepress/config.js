@@ -1,11 +1,13 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Just playing around',
+    // title: 'Hello VuePress',
+    // description: 'Just playing around',
+    base: '/docs-test/',
     themeConfig: {
+        logo: '/logo.png',
         nav:[
             {
                 text:'Docs',
-                link:'/'
+                link:'/dev/'
             },
             {
                 text:'FAQ',
@@ -13,29 +15,124 @@ module.exports = {
             },
         ],
         sidebar:{
-            // docs文件夹下面的accumulate文件夹 文档中md文件 书写的位置(命名随意)
-            '/accumulate/': [
-                '/accumulate/', // accumulate文件夹的README.md 不是下拉框形式
+            '/faq/': [
                 {
-                  title: '侧边栏下拉框的标题1',
-                  children: [
-                    '/accumulate/JS/test', // 以docs为根目录来查找文件 
-                    // 上面地址查找的是：docs>accumulate>JS>test.md 文件
-                    // 自动加.md 每个子选项的标题 是该md文件中的第一个h1/h2/h3标题
-                  ]
-                }
+                  title: 'Welcome to zkSync',  // required
+                  path: '/faq/', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 0,     // optional, defaults to 1
+                },
+                {
+                  title: 'Overview',  // required
+                  path: '/faq/intro.html', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Technology',  // required
+                  path: '/faq/tech', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Security',  // required
+                  path: '/faq/security', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Wallets',  // required
+                  path: '/faq/wallets', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Tokens & Fees',  // required
+                  path: '/faq/tokens', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Decentralization',  // required
+                  path: '/faq/decentralization', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Tokenomics',  // required
+                  path: '/faq/tokenomics', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Smart contracts',  // required
+                  path: '/faq/sc', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Privacy',  // required
+                  path: '/faq/privacy', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                {
+                  title: 'Roadmap',  // required
+                  path: '/faq/roadmap', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,     // optional, defaults to 1
+                },
+                //{
+                //    title: 'FAQ',  // required
+                //    path: '/faq/', // optional, which should be a absolute path.
+                //    collapsable: true,  // optional, defaults to true
+                //    sidebarDepth: 1,     // optional, defaults to 1
+                //    children: [
+                //'/faq/intro',
+                //'/faq/tech',
+                //'/faq/security',
+                //'/faq/wallets',
+                //'/faq/tokens',
+                //'/faq/decentralization',
+                //'/faq/tokenomics',
+                //'/faq/sc',
+                //'/faq/privacy',
+                //'/faq/roadmap',
+                //'/faq/status',
+                //    ]
+                //},
               ],
-              // docs文件夹下面的algorithm文件夹 这是第二组侧边栏 跟第一组侧边栏没关系
-              '/algorithm/': [
-                '/algorithm/', 
+              '/dev': [
                 {
-                  title: '第二组侧边栏下拉框的标题1',
+                  title: 'Introduction',  // required
+                  path: '/dev/',      // optional, which should be a absolute path.
+                  collapsable: false  // optional, defaults to true
+                },
+                {
+                  title: 'Payments',  // required
+                  path: '/dev/payments', // optional, which should be a absolute path.
+                  collapsable: true,  // optional, defaults to true
+                  sidebarDepth: 1,    // optional, defaults to 1
                   children: [
-                    '/algorithm/simple/test' 
+                    '/dev/payments/basic',
+                    '/dev/payments/sending_transactions',
                   ]
-                }
-              ]
-            }
+                },
+                {
+                  title: 'Smart contracts',  // required
+                  path: '/dev/contracts/', // optional, which should be a absolute path.
+                  collapsable: false,  // optional, defaults to true
+                },
+                '/dev/bug-bounty',
+                '/dev/nfts',
+                '/dev/swaps',
+                '/dev/events'
+              ],
+        }
 
-    }
+    },
+    smoothScroll: true
+    // markdown: {
+    //     toc: { includeLevel: [2, 3] }
+    // },
   }
