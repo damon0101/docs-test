@@ -1,16 +1,30 @@
-# faq
+# Welcome to zkSync
 
-##faq
+**zkSync** is a user-centric zk rollup platform from [Matter Labs](https://matter-labs.io). It is a scaling solution for
+Ethereum, already live on Ethereum mainnet.
 
-## 666 fasq
-## 666
+<!-- using HTML style instead of Markdown ## since our formatter screams when a title is punctuated -->
 
-`test
+<b>Some of the main features of zkSync are:</b>
 
-###  555
+- Extremely low transaction fees
+- Trustless protocol
+- Funds are cryptographically secure, as in the Ethereum mainnet
+- Users are always in control of their funds
+- No requirement for operational activity to keep the funds safe
 
+<b>Get started by reading [the overview](/faq/intro.md).</b>
 
-###  666
+<!-- markdownlint-disable MD001 -->
 
+### For Developers
 
-##### 5
+If you are interested in developing with zkSync, view our [Developers Guide](/dev/) and [API Reference](/api).
+
+### Interested in reading more?
+
+In-depth articles can be found on our [Medium page](https://medium.com/matter-labs).
+
+### Contact
+
+If you have any questions or want to be part of our community, please check out our [contact page](/contact.md).
