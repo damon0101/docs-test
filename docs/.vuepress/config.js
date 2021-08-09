@@ -126,7 +126,8 @@ module.exports = {
                 '/dev/bug-bounty',
                 '/dev/nfts',
                 '/dev/swaps',
-                '/dev/events'
+                '/dev/events',
+                '/dev/test
               ],
         }
 
