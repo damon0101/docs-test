@@ -127,7 +127,7 @@ module.exports = {
                 '/dev/nfts',
                 '/dev/swaps',
                 '/dev/events',
-                '/dev/test
+                '/dev/test'
               ],
         }
 
