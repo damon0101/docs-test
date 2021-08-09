@@ -13,6 +13,7 @@ npm run docs:build
 # echo 'www.example.com' > CNAME
 git config --global user.name 'samzktube'
 git config --global user.email 'sam@zktube.io'
+git config --global init.defaultBranch 'master'
  git init
  git add -A
  git commit -m 'deploy'
