@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
     // title: 'Hello VuePress',
     // description: 'Just playing around',
@@ -135,14 +136,18 @@ module.exports = {
 
     },
     smoothScroll: true,
-//     configureWebpack: {
-//       resolve: {
-//         alias: {
-//           '@': resolve('docs/.vuepress/public')
-//         }
-//       }
-//     }
+    configureWebpack: {
+      resolve: {
+        alias: {
+          '@': resolve('docs/.vuepress/public')
+        }
+      }
+    }
     // markdown: {
     //     toc: { includeLevel: [2, 3] }
     // },
   }
+
+function resolve (dir) {
+    return path.join(__dirname, '..', dir)
+}
