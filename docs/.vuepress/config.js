@@ -128,7 +128,7 @@ module.exports = {
                 '/dev/swaps',
                 '/dev/events',
                 '/dev/test',
-                '/dev/testdemo'，
+                '/dev/testdemo',
                 '/dev/damontest'
               ],
         }
