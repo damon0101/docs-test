@@ -135,13 +135,13 @@ module.exports = {
 
     },
     smoothScroll: true,
-    configureWebpack: {
-      resolve: {
-        alias: {
-          '@': resolve('docs/.vuepress/public')
-        }
-      }
-    }
+//     configureWebpack: {
+//       resolve: {
+//         alias: {
+//           '@': resolve('docs/.vuepress/public')
+//         }
+//       }
+//     }
     // markdown: {
     //     toc: { includeLevel: [2, 3] }
     // },
