@@ -134,7 +134,14 @@ module.exports = {
         }
 
     },
-    smoothScroll: true
+    smoothScroll: true,
+    configureWebpack: {
+      resolve: {
+        alias: {
+          '@': resolve('docs/.vuepress/public')
+        }
+      }
+    }
     // markdown: {
     //     toc: { includeLevel: [2, 3] }
     // },
