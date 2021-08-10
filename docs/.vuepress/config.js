@@ -139,7 +139,7 @@ module.exports = {
     configureWebpack: {
       resolve: {
         alias: {
-          '@': resolve('docs/.vuepress/public')
+          '@': resolve('/.vuepress/public')
         }
       }
     }
