@@ -129,6 +129,7 @@ module.exports = {
                 '/dev/events',
                 '/dev/test',
                 '/dev/testdemo'
+                '/dev/damontest'
               ],
         }
 
