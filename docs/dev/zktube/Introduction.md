@@ -6,6 +6,6 @@
  
 - rollup to realize low transaction fees and high throughput transactions between ETH and erc20.
 
-![zktube](@/damonpng.png)
+![zktube](https://github.com/damon0101/docs-test/blob/master/docs/.vuepress/public/damonpng.png)
 
 [how to pay?](/dev/payments)
