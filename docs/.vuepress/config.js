@@ -130,7 +130,6 @@ module.exports = {
                 '/dev/events',
                 '/dev/test',
                 '/dev/testdemo',
-                '/dev/damontest',
                 '/dev/zktube/Introduction',
                 '/dev/nice/damontest'
               ],
